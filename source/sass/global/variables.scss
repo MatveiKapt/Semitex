@@ -1,0 +1,23 @@
+// Colors
+
+$page-background: #F2F2F4;
+$white: #ffffff;
+$text-violet: #969AF7;
+$border-grey: #F2F3F5;
+$label-grey: #626366;
+$input-background: #F5F3FF;
+$placeholder: #BCBFC4;
+$button-background: #FFA500;
+$confidentiality-color: #C0C0C0;
+$section-title: #111111;
+$advantages-subtitle: #030303;
+$advantages-item-title: #2A336C;
+$advantages-item-description: #555555;
+
+// Mixins
+
+@mixin  fontSizeHeightWeight ($size, $height, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}

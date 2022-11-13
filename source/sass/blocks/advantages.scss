@@ -1,0 +1,134 @@
+.advantages {
+  padding-top: 85px;
+  padding-bottom: 130px;
+  background-color: $page-background;
+}
+
+.advantages__inner {
+  width: 1193px;
+  margin: 0 auto;
+}
+
+.advantages__section-title {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.advantages__subtitle {
+  width: 1051px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  text-align: center;
+  @include fontSizeHeightWeight(22px, 24px);
+  color: $advantages-subtitle;
+}
+
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 369px);
+  column-gap: 43px;
+  row-gap: 32px;
+  list-style: none;
+}
+
+.advantages__item {
+  width: 305px;
+  padding: 242px 32px 40px 32px;
+  position: relative;
+  background-color: $white;
+  background-image: url(../../img/advantages/advantages-item-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-radius: 10px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    width: 157px;
+    height: 163px;
+    display: block;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/advantages-subicon.svg);
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+  }
+
+  &--quality::after {
+    width: 52px;
+    height: 44px;
+    top: 30%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/quality-icon.svg);
+  }
+
+  &--individual::after {
+    width: 51px;
+    height: 50px;
+    top: 29.5%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/individual-icon.svg);
+  }
+
+  &--delivery::after {
+    width: 51px;
+    height: 36px;
+    top: 29%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/delivery-icon.svg);
+  }
+
+  &--analogues::after {
+    width: 51px;
+    height: 50px;
+    top: 29%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/analogues-icon.svg);
+  }
+
+  &--reserve::after {
+    width: 50px;
+    height: 51px;
+    top: 29%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/reserve-icon.svg);
+  }
+
+  &--pay::after {
+    width: 36px;
+    height: 51px;
+    top: 29.5%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../img/advantages/pay-icon.svg);
+  }
+}
+
+.advantages__title {
+  color: $advantages-item-title;
+  @include fontSizeHeightWeight(20px, 23.28px, 600);
+}
+
+.advantages__description {
+  color: $advantages-item-description;
+  @include fontSizeHeightWeight(20px, 22px);
+}

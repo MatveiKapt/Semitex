@@ -1,0 +1,14 @@
+.page {
+  height: 100%;
+  font-family: Futura;
+  @include fontSizeHeightWeight(22px, 24px);
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: $page-background;
+}

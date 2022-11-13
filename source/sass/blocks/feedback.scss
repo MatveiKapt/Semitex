@@ -1,0 +1,111 @@
+.feedback {
+  width: 380px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feedback__title {
+  display: block;
+  margin: 0;
+  padding: 32px 60px 15px 60px;
+  border-radius: 10px 10px 0 0;
+  background-image: linear-gradient(180deg, #6A32B4 0%, #552693 100%);
+  color: $white;
+  text-transform: uppercase;
+  @include fontSizeHeightWeight(23px, 26.77px, 600);
+  text-align: center;
+}
+
+.feedback__form {
+  padding: 31px 40px 36px 40px;
+  border: 1px solid $border-grey;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background-color: $white;
+}
+
+.feedback__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.feedback__list {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  list-style: none;
+}
+
+.feedback__item {
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.feedback__label {
+  margin-bottom: 5px;
+  padding-left: 5px;
+  @include fontSizeHeightWeight(18px, 23.2px);
+  color: $label-grey;
+}
+
+.feedback__input {
+  padding: 21px 20px 16px 20px;
+  background-color: $input-background;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+  &::placeholder {
+    color: #BCBFC4;
+  }
+}
+
+.feedback__button {
+  display: block;
+  width: 300px;
+  margin-bottom: 17px;
+  padding: 19px 20px 18px 20px;
+  border-radius: 10px;
+  background-color: $button-background;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  @include fontSizeHeightWeight(18px, 19px);
+  border: none;
+
+  &:hover {
+    background-color: lighten($button-background, 10%);
+  }
+}
+
+.feedback__checkbox-label {
+  padding-left: 26px;
+  position: relative;
+  @include fontSizeHeightWeight(14px, 15.85px);
+  color: $confidentiality-color;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 1px solid $text-violet;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+}
+
+.feedback__checkbox:checked + label::before {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-image: url(../../img/header/checkbox.svg);
+  background-repeat: no-repeat;
+}

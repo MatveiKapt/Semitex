@@ -1,0 +1,10 @@
+.section-title {
+  width: 700px;
+  text-align: center;
+  @include fontSizeHeightWeight(45px, 44.91px, 600);
+  color: $section-title;
+
+  &--white {
+    color: $white;
+  }
+}
